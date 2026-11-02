@@ -10,7 +10,7 @@ Arquitectura monolítica con Frontend separado del Backend. Este repositorio con
 ## 1. Tecnologías
 
 - Node.js + Express 4
-- MongoDB + Mongoose 8
+- MongoDB + Mongoose 8 (para la segunda parte del tranbajo)
 - express-validator (validaciones), cors, morgan, dotenv
 
 ## 2. Diseño de la base de datos
@@ -43,16 +43,6 @@ medias.tipo       ──N:1──▶ tipos._id
 4. `fechaCreacion` es inmutable; `fechaActualizacion` se actualiza sola en cada `save` / `findOneAndUpdate`.
 5. No hay autenticación (no requerida por ahora: solo modo Administrador sin registro).
 
-**Diagrama (texto):**
-
-```
-┌──────────┐  ┌────────────┐  ┌──────────────┐  ┌────────┐
-│ generos  │  │ directores │  │ productoras  │  │ tipos  │
-└────▲─────┘  └─────▲──────┘  └──────▲───────┘  └───▲────┘
-     │             │                │              │
-     └─────────────┴──── medias ────┴──────────────┘
-              (serial único, titulo, sinopsis, url única,
-               imagen, anioEstreno, fechas)
 ```
 
 ## 3. Instalación y ejecución
@@ -169,7 +159,7 @@ proyecto-peliculas-api/
 
 ## 8. Criterios de entrega
 
-- ✅ Base de datos diseñada (sección 2).
+- ✅ Base de datos diseñada (sección 2, aun no terminada).
 - ✅ Métodos POST, GET, PUT, DELETE por cada módulo.
-- ✅ Funciona y se prueba con Postman (colección incluida).
+- ✅ Funciona y se prueba con Postman (colección incluida). `aun presenta errores`
 - ✅ Carpeta principal: `proyecto-peliculas-api`.
