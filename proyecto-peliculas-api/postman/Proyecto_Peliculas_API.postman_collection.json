@@ -1,0 +1,144 @@
+{
+  "info": {
+    "name": "Proyecto Peliculas API",
+    "description": "Colección CRUD de los 5 módulos: Géneros, Directores, Productoras, Tipos y Medias. Base: {{baseUrl}}",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:4000" }],
+  "item": [
+    {
+      "name": "Generos",
+      "item": [
+        { "name": "Listar generos", "request": { "method": "GET", "url": "{{baseUrl}}/api/generos" } },
+        { "name": "Obtener genero por id", "request": { "method": "GET", "url": "{{baseUrl}}/api/generos/:id" } },
+        {
+          "name": "Crear genero",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Acción\",\n  \"estado\": \"Activo\",\n  \"descripcion\": \"Peleas y adrenalina\"\n}" },
+            "url": "{{baseUrl}}/api/generos"
+          }
+        },
+        {
+          "name": "Actualizar genero",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Acción\",\n  \"estado\": \"Activo\",\n  \"descripcion\": \"Actualizada\"\n}" },
+            "url": "{{baseUrl}}/api/generos/:id"
+          }
+        },
+        { "name": "Eliminar genero", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/generos/:id" } }
+      ]
+    },
+    {
+      "name": "Directores",
+      "item": [
+        { "name": "Listar directores", "request": { "method": "GET", "url": "{{baseUrl}}/api/directores" } },
+        { "name": "Obtener director por id", "request": { "method": "GET", "url": "{{baseUrl}}/api/directores/:id" } },
+        {
+          "name": "Crear director",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombres\": \"Christopher Nolan\",\n  \"estado\": \"Activo\"\n}" },
+            "url": "{{baseUrl}}/api/directores"
+          }
+        },
+        {
+          "name": "Actualizar director",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombres\": \"Christopher Nolan\",\n  \"estado\": \"Activo\"\n}" },
+            "url": "{{baseUrl}}/api/directores/:id"
+          }
+        },
+        { "name": "Eliminar director", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/directores/:id" } }
+      ]
+    },
+    {
+      "name": "Productoras",
+      "item": [
+        { "name": "Listar productoras", "request": { "method": "GET", "url": "{{baseUrl}}/api/productoras" } },
+        { "name": "Obtener productora por id", "request": { "method": "GET", "url": "{{baseUrl}}/api/productoras/:id" } },
+        {
+          "name": "Crear productora",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Disney\",\n  \"estado\": \"Activo\",\n  \"slogan\": \"Donde los sueños se hacen realidad\",\n  \"descripcion\": \"Productora estadounidense\"\n}" },
+            "url": "{{baseUrl}}/api/productoras"
+          }
+        },
+        {
+          "name": "Actualizar productora",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Disney\",\n  \"estado\": \"Activo\",\n  \"slogan\": \"Nuevo slogan\",\n  \"descripcion\": \"Actualizada\"\n}" },
+            "url": "{{baseUrl}}/api/productoras/:id"
+          }
+        },
+        { "name": "Eliminar productora", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/productoras/:id" } }
+      ]
+    },
+    {
+      "name": "Tipos",
+      "item": [
+        { "name": "Listar tipos", "request": { "method": "GET", "url": "{{baseUrl}}/api/tipos" } },
+        { "name": "Obtener tipo por id", "request": { "method": "GET", "url": "{{baseUrl}}/api/tipos/:id" } },
+        {
+          "name": "Crear tipo",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Película\",\n  \"descripcion\": \"Producción unitaria\"\n}" },
+            "url": "{{baseUrl}}/api/tipos"
+          }
+        },
+        {
+          "name": "Actualizar tipo",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Serie\",\n  \"descripcion\": \"Por episodios\"\n}" },
+            "url": "{{baseUrl}}/api/tipos/:id"
+          }
+        },
+        { "name": "Eliminar tipo", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/tipos/:id" } }
+      ]
+    },
+    {
+      "name": "Medias",
+      "item": [
+        { "name": "Listar medias", "request": { "method": "GET", "url": "{{baseUrl}}/api/medias" } },
+        { "name": "Buscar medias por titulo", "request": { "method": "GET", "url": "{{baseUrl}}/api/medias?titulo=origen" } },
+        { "name": "Obtener media por id", "request": { "method": "GET", "url": "{{baseUrl}}/api/medias/:id" } },
+        {
+          "name": "Crear media",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"serial\": \"MOV-0001\",\n  \"titulo\": \"El origen\",\n  \"sinopsis\": \"Un ladrón que roba secretos de los sueños.\",\n  \"url\": \"https://ejemplo.com/peliculas/el-origen\",\n  \"imagen\": \"https://ejemplo.com/portadas/el-origen.jpg\",\n  \"anioEstreno\": 2010,\n  \"genero\": \"<ID_GENERO_ACTIVO>\",\n  \"director\": \"<ID_DIRECTOR_ACTIVO>\",\n  \"productora\": \"<ID_PRODUCTORA_ACTIVA>\",\n  \"tipo\": \"<ID_TIPO>\"\n}"
+            },
+            "url": "{{baseUrl}}/api/medias"
+          }
+        },
+        {
+          "name": "Actualizar media",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"titulo\": \"El origen (remasterizada)\",\n  \"anioEstreno\": 2010\n}" },
+            "url": "{{baseUrl}}/api/medias/:id"
+          }
+        },
+        { "name": "Eliminar media", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/medias/:id" } }
+      ]
+    }
+  ]
+}
