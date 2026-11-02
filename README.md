@@ -1,7 +1,8 @@
-#  Proyecto Películas API — IUDigital de Antioquia
+#  Proyecto Películas API — IUDigital de Antioquia (Primera entrega + Segunda entrega + Tercera entrega) 
+Primera parte: Lista
 
-API REST (modo Administrador) para gestionar películas y series: **Género, Director, Productora, Tipo y Media**.
-Arquitectura monolítica con Frontend separado del Backend. Este repositorio contiene el **Backend + Base de datos**.
+API REST para gestionar películas y series: **Género, Director, Productora, Tipo y Media**.
+Arquitectura monolítica con Frontend separado del Backend. Este repositorio contiene (Contendrá) el **Backend + Base de datos**.
 
 > Carpeta principal de entrega: `proyecto-peliculas-api`
 
