@@ -9,15 +9,15 @@ Arquitectura monolítica con Frontend separado del Backend. Este repositorio con
 
 ## 1. Tecnologías
 
-- Node.js + Express 4
-- MongoDB + Mongoose 8 (para la segunda parte del tranbajo)
+- Node.js + Express 
+- MongoDB + Mongoose (para la segunda parte del tranbajo)
 - express-validator (validaciones), cors, morgan, dotenv
 
 ## 2. Diseño de la base de datos
 
 **Motor:** MongoDB (NoSQL, base `peliculasdb`).
 
-**Colecciones (5):**
+**Colecciones ():**
 
 | Colección | Campos |
 |---|---|
