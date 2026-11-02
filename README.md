@@ -52,18 +52,18 @@ cd proyecto-peliculas-api
 npm install
 cp .env.example .env
 # Editar .env con tu MONGO_URI
-# Local:  MONGO_URI=mongodb://127.0.0.1:27017/peliculasdb
-# Atlas:  MONGO_URI=mongodb+srv://<user>:<pass>@<cluster>/peliculasdb
+# Local:  MONGO_URI=mongodb:
+# Atlas:  MONGO_URI=mongodb+srv:
 
-npm run dev    # desarrollo (nodemon) → http://localhost:4000
+npm run dev    # desarrollo (nodemon) → http://localhost:3000
 # o
 npm start      # producción
 
-# (Opcional) cargar datos iniciales: 5 géneros, 3 directores, 4 productoras, 2 tipos
-npm run seed
+# (Opcional/prueba) cargar datos iniciales: 5 géneros, 3 directores, 4 productoras, 2 tipos
+npm run seed 
 ```
 
-> Se necesita MongoDB corriendo localmente o una cuenta de MongoDB Atlas.
+> Se necesita MongoDB corriendo localmente o una cuenta de MongoDB Atlas. (Aun no terminada)
 
 ## 4. Métodos / Endpoints (CRUD completo)
 
